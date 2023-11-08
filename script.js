@@ -2,4 +2,10 @@ var card = '<div class="card" style="width:400px"><img class="card-img-top" src=
 
 var vardadiv = document.getElementById("conteudo");
 
-vardadiv.innerHTML = card + card + card + card;
+var divs ='';
+for (i = 0; i < 100; i++) {
+    divs +=card;
+}
+
+vardadiv.innerHTML = divs;
+
